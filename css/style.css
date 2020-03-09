@@ -43,6 +43,17 @@ header img{
     /* alterar filtro da imagem */
     filter: drop-shadow(1px 1px 2px rgba(255,195,14,0.5));
 }
-#menu{background-color: var(--fundo); position: absolute; top: 80px;left: 0px; width: 60%;padding: 2em 3em;}
+#menu{background-color: var(--fundo); position: absolute; top: 80px;left: 0px; width: 60%;padding: 2em 3em;display: none;}
 #menu ul li, #menu ul li a{padding: 10px 10em 10px 0;}
 .top_sociais{display: none;}
+main section{max-width: 80%; margin: auto;}
+h2{width: 80%; margin: 2em 0;}
+.card{margin:  2em 0;}
+.card img{margin-top: 8px; box-shadow: 6px 6px 10px var(--shadow), -6px -6px 10px var(--light);}
+footer{padding: 2em 0px;}
+footer ul{font-size: 0.7em; padding: 2em;}
+footer h4{text-align: left;}
+footer p{text-align: center; margin: 2em;}
+.links{margin: 2em 0px; }
+.social{display: flex; justify-content: space-around; }
+.social a{color: var(--omeleteshadow);text-shadow: 1px 1px 2px var(--omeleteshadow);}
