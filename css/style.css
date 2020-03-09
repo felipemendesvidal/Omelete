@@ -1,8 +1,48 @@
+/* definindo variaveis */
+:root{
+    --fundo:#e7f1fa;
+    --texto:#3737;
+
+    --light:#fff;
+    --shadow:#c7d2db;
+    --omeleteshadow:#ffc20e;
+
+}
+/* inicio reset */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+ul{list-style-type: none;}
+a{text-decoration: none; color: var(--texto);font-size: 1.4em;}
+img{width: 100%;}
+h1,h2,h3,h4,h5,h6{text-transform: uppercase; text-align: center; width: 100%;}
+
 
 body{
-    background-color: #F2F5FF;
+    background-color:var(--fundo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.btn{padding:  0.5em 0.7em;}
+.rounded{border-radius: 10px;}
+.circle{border-radius: 50%;}
+
+.shadow{box-shadow: 6px 6px 6px var(--shadow), -6px -6px 6px var(--light);} 
+
+/* dois shadows */
+/* sombra para dentro */
+.inner,.shadow:hover,.shadow:active{box-shadow: inset 6px 6px 6px var(--shadow),inset -6px -6px 10px var(--light);}
+.container{width: 80%; margin: auto;}
+
+/* fim reset */
+/* header */
+header{display: flex; align-items: center; justify-content: space-around; height: 80px;}
+header img{
+    width: 120px;
+    /* alterar filtro da imagem */
+    filter: drop-shadow(1px 1px 2px rgba(255,195,14,0.5));
+}
+#menu{background-color: var(--fundo); position: absolute; top: 80px;left: 0px; width: 60%;padding: 2em 3em;}
+#menu ul li, #menu ul li a{padding: 10px 10em 10px 0;}
+.top_sociais{display: none;}
